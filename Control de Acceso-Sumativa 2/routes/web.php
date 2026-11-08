@@ -36,7 +36,7 @@ Route::middleware('auth')->group(function () {
     // MÓDULOS DE FASE II - SUMATIVA 3
     // ==========================================
     // 1. Módulo de Trabajadores
-    Route::resource('trabajadores', TrabajadorController::class)->only(['index', 'create', 'store', 'show']);
+    Route::resource('trabajadores', TrabajadorController::class)->parameters(['trabajadores' => 'trabajador'])->only(['index', 'create', 'store', 'show']);
 
     // 2. Módulo de Expediente Digital
     Route::post('/trabajadores/{trabajador}/expedientes', [ExpedienteController::class, 'store'])->name('expedientes.store');
