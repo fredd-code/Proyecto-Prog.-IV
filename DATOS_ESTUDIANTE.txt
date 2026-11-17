@@ -1,0 +1,41 @@
+====================================================================
+UNIVERSIDAD BICENTENARIA DE ARAGUA
+VICERRECTORADO ACADÉMICO - DECANATO DE INGENIERÍA
+ESCUELA DE INGENIERÍA DE SISTEMAS
+NÚCLEO SAN ANTONIO DE LOS ALTOS
+====================================================================
+ASIGNATURA: PROGRAMACIÓN IV (FEE18P - Sección B)
+EVALUACIÓN: ACTIVIDAD SUMATIVA 4 - FASE III FINAL (PROYECTO INTEGRAL DE APLICACIÓN)
+FACILITADOR: ING. RICARDO MONTERO, MSc.
+FECHA DE ENTREGA: NOVIEMBRE 2026
+
+DATOS DE LOS AUTORES:
+- FREDDERICK MORENO (C.I. V-21.202.137)
+- IVÁN ARTURO ZAMBRANO ACOSTA (C.I. V-29.503.564)
+
+REPOSITORIO EN GITHUB:
+URL: https://github.com/fredd-code/Proyecto-Prog.-IV.git
+RAMA PRINCIPAL: main / sumativa-4
+
+DESCRIPCIÓN DEL PROYECTO:
+Sistema Integral de Gestión de Empleados y Nómina (SIGEN v4.0) desarrollado
+con el framework Laravel 12 / PHP 8.2+, Tailwind CSS v4, SQLite / MySQL.
+
+Módulos Implementados en Fase Final (Sumativa 4):
+1. Panel Multi-Tenant para Empresas Clientes (Venta del servicio SaaS B2B, configuración de sedes GPS y teléfonos de alertas).
+2. Ficha de Trabajadores con Teléfono de Contacto obligatorio y PIN personal de seguridad anti-fraude.
+3. Marcaje Inteligente Anti-Fraude con Geocerca Satelital GPS (fórmula de Haversine) y detección automática de Entrada/Salida.
+4. Terminal Kiosco de Recepción (alternativa física ante fallas de móvil o batería).
+5. Botón de Retiro por Imprevisto o Permiso Justificado con notificación inmediata vía WhatsApp/SMS al teléfono de la empresa.
+6. Módulo de Préstamos, Anticipos y Ajustes Salariales con switch de visibilidad en el Recibo de Pago.
+7. Liquidación de Nómina periódica LOTTT (IVSS 4%, RPE 0.5%, FAOV 1%, Cestaticket) y emisión de Recibos de Pago con membrete corporativo.
+
+INSTRUCCIONES DE DESPLIEGUE RÁPIDO:
+1. Descomprimir este archivo o clonar el repositorio.
+2. composer install
+3. npm install && npm run build
+4. cp .env.example .env && php artisan key:generate
+5. php artisan migrate
+6. php artisan storage:link
+7. php artisan serve
+====================================================================
